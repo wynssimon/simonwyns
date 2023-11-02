@@ -1,7 +1,7 @@
 /*algemeen*/
 
 html {
-  font-family: "Courier New", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Source Sans 3", Arial, "Helvetica Neue", Helvetica, sans-serif;
   box-sizing: border-box;
   background-color: #151515;
 }
@@ -69,6 +69,7 @@ header .navigatie ul li {
   font-size: 25px;
   transition-duration: 0.5s;
   border-bottom: 2px solid transparent;
+  font-family: "Courier New", Courier, monospace;
 }
 .navigatie ul li a:hover {
   text-decoration: none;
@@ -154,7 +155,7 @@ header .socials ul li a img {
   margin-bottom: 10px;
 }
 #projecten article a figure figcaption {
-  color: black;
+  color: #151515;
   transition-duration: 0.5s;
   text-align: left;
 }
@@ -175,28 +176,33 @@ h1 {
   font-weight: 550;
   line-height: 60px;
   cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
 }
 h2 {
   font-size: 45px;
   line-height: 10px;
   color: white;
   font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
 }
 h3 {
   font-size: 30px;
   font-weight: 600;
   color: white;
+  font-family: "Courier New", Courier, monospace;
 }
 h4 {
   font-size: 20px;
   color: white;
+  font-family: "Courier New", Courier, monospace;
 }
 p,
 li {
   font-size: 20px;
   line-height: 25px;
-  font-weight: 500;
+  font-weight: 300;
   color: white;
+  font-family: "Source Sans 3", sans-serif;
 }
 footer p {
   text-align: center;
@@ -213,7 +219,7 @@ p a {
   font-weight: 600;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 figcaption {
   color: white;
@@ -222,6 +228,10 @@ figcaption {
 }
 label {
   color: white;
+}
+span {
+  color: #e65c4f;
+  font-weight: 600;
 }
 
 /*tabel*/
@@ -232,7 +242,7 @@ table {
 table tr th {
   font-size: 18px;
   color: white;
-  font-weight: 500;
+  font-weight: 300;
 }
 table thead th {
   color: white;
@@ -257,6 +267,14 @@ table th {
 #vandenborre img {
   max-height: 450px;
   border-radius: 80px;
+}
+article ul,
+article ol {
+  padding: none;
+}
+article ul li,
+article ol li {
+  line-height: 50px;
 }
 /*form*/
 form {
@@ -294,13 +312,11 @@ input[type="submit"] {
   border: 1px solid white;
   border-radius: 10px;
   color: white;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 300;
   font-size: 30px;
   cursor: pointer;
-  transition-duration: 0.5s;
 }
 input[type="submit"]:hover {
-  background: white;
-  color: black;
+  background: rgba(255, 255, 255, 0.259);
 }
