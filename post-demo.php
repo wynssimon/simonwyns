@@ -14,9 +14,8 @@ echo
 'Voornaam: ' . htmlspecialchars($_POST["Voornaam"]) . "\n" .
 'Familienaam: ' . htmlspecialchars($_POST["Familienaam"]) . "\n" .
 'E-mail: ' . htmlspecialchars($_POST["E-mail"]) . "\n" .
-'Type vraag: ' . htmlspecialchars($_POST["Type-vraag"]) . "\n" .
-'Vraag: ' . htmlspecialchars($_POST["Vraag"]) . "\n" .
-'Nieuwbrief: ' . htmlspecialchars($_POST["Nieuwsbrief"]);
+'Nummer: ' . htmlspecialchars($_POST["Nummer"]) . "\n" .
+'Vraag: ' . htmlspecialchars($_POST["Vraag"]) . "\n";
 ?>
   </pre>
 </body>

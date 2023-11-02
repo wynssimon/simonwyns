@@ -45,9 +45,6 @@ section {
 }
 
 /*header*/
-.underline {
-  border-bottom: 2px solid #f04c25;
-}
 header .navigatie {
   float: right;
   height: 100%;
@@ -67,13 +64,18 @@ header .navigatie ul li {
 .navigatie ul li a {
   color: black;
   font-size: 25px;
-  transition-duration: 0.5s;
-  border-bottom: 2px solid transparent;
   font-family: "Courier New", Courier, monospace;
 }
 .navigatie ul li a:hover {
   text-decoration: none;
   border-bottom: 2px solid #f04c25;
+}
+.underline {
+  border-bottom: 2px solid #f04c25;
+}
+.nonunderline {
+  transition-duration: 0.5s;
+  border-bottom: 2px solid transparent;
 }
 header .socials {
   float: right;
@@ -116,16 +118,24 @@ header .socials ul li a img {
 #studie {
   width: 75%;
   float: left;
-  margin: 0 0 50px 0;
+  margin: 0 0 70px 0;
+}
+h3 {
+  margin-top: 0;
 }
 #ik {
   float: right;
   width: 20%;
-  margin: 0 0 50px 0;
+  margin: 0 0 70px 0;
 }
 #ik img {
   max-height: 450px;
   border-radius: 80px;
+}
+#vrijetijd {
+  width: 75%;
+  float: left;
+  margin: 0 0 70px 0;
 }
 #youtube {
   width: 50%;
@@ -165,6 +175,18 @@ header .socials ul li a img {
 #projecten article a figure {
   margin: 0;
 }
+.projectafbeeldingen figure {
+  display: inline-block;
+  width: 40%;
+  margin: 0 25px 0 0;
+}
+.projectafbeeldingen figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+.projectafbeeldingen figure figcaption {
+  text-align: left;
+}
 /*tekst elementen*/
 
 h1 {
@@ -184,17 +206,21 @@ h2 {
   color: white;
   font-weight: 600;
   font-family: "Courier New", Courier, monospace;
+  margin-bottom: 50px;
 }
 h3 {
   font-size: 30px;
   font-weight: 600;
   color: white;
+  margin: 0;
   font-family: "Courier New", Courier, monospace;
 }
 h4 {
   font-size: 20px;
   color: white;
   font-family: "Courier New", Courier, monospace;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 p,
 li {
@@ -224,7 +250,6 @@ a:hover {
 figcaption {
   color: white;
   margin-top: 10px;
-  text-align: center;
 }
 label {
   color: white;
@@ -256,14 +281,13 @@ table th {
 #ervaring {
   width: 75%;
   float: left;
-  margin: 0 0 50px 0;
+  margin: 50px 0 50px 0;
 }
 #vandenborre {
   float: right;
   width: 20%;
   margin: 0 0 50px 0;
 }
-
 #vandenborre img {
   max-height: 450px;
   border-radius: 80px;
@@ -298,6 +322,9 @@ textarea {
   padding-left: 20px;
   display: inline-block;
   margin: 10px 10px 10px 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Courier New", Courier, monospace;
 }
 textarea {
   padding-top: 20px;
@@ -316,6 +343,7 @@ input[type="submit"] {
   font-weight: 300;
   font-size: 30px;
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 input[type="submit"]:hover {
   background: rgba(255, 255, 255, 0.259);
