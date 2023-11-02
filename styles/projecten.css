@@ -1,0 +1,31 @@
+/*mijn projecten*/
+#projecten {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#projecten article {
+  width: 30%;
+  height: 30%;
+  margin: 10px 40px 50px 0;
+}
+#projecten article a:hover {
+  text-decoration: none;
+}
+#projecten article a figure img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+#projecten article a figure figcaption {
+  color: #151515;
+  transition-duration: 0.5s;
+  text-align: left;
+}
+#projecten article a:hover figure figcaption {
+  color: white;
+}
+#projecten article a figure {
+  margin: 0;
+}
+

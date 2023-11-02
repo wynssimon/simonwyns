@@ -1,0 +1,15 @@
+.projectafbeeldingen figure {
+  display: inline-block;
+  width: 40%;
+  margin: 0 25px 0 0;
+}
+.projectafbeeldingen figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+.projectafbeeldingen figure figcaption {
+  text-align: left;
+}
+h3 {
+  color: #e65c4f;
+}

@@ -1,0 +1,43 @@
+#ervaring {
+  width: 75%;
+  float: left;
+  margin: 50px 0 50px 0;
+}
+#vandenborre {
+  float: right;
+  width: 20%;
+  margin: 0 0 50px 0;
+}
+#vandenborre img {
+  max-height: 450px;
+  border-radius: 80px;
+}
+article ul,
+article ol {
+  padding: none;
+}
+article ul li,
+article ol li {
+  line-height: 50px;
+}
+.back {
+  font-size: 20px;
+}
+
+/*tabel*/
+table {
+  width: 80%;
+  text-align: left;
+}
+table tr th {
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+table thead th {
+  color: white;
+  font-weight: 600;
+}
+table th {
+  padding: 10px 0;
+}
