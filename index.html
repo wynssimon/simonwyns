@@ -51,8 +51,8 @@
       </nav>
     </header>
     <main>
+      <h2>Hey!</h2>
       <article id="intro">
-        <h2>Hey!</h2>
         <p>
           Ik ben Simon Wyns, 21 jaar uit Brasschaat. Ik studeer sinds september
           2023 aan de Thomas More Hogeschool te Antwerpen. Daar volg ik een
@@ -67,6 +67,26 @@
       <figure id="profiel">
         <img src="./img/simon.jpg" alt="Mijn profielfoto" />
       </figure>
+      <article>
+        <h3>Contact</h3>
+        <p>
+          Aarzel zeker niet om contact op te nemen indien u een vraag of iets te
+          zeggen hebt.
+        </p>
+        <form action="post-demo.php" method="post">
+          <input type="text" id="voornaam" placeholder="voornaam" />
+          <input type="text" id="achternaam" placeholder="achternaam" />
+          <input type="email" id="email" placeholder="email" />
+          <input type="tel" id="gsm" placeholder="telefoonnummer" />
+          <textarea
+            id="bericht"
+            cols="30"
+            rows="10"
+            placeholder="bericht/ vraag"
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </article>
     </main>
     <footer>
       <p>© 2023, all rights reserved</p>

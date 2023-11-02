@@ -40,6 +40,9 @@ footer {
   width: 100%;
   clear: both;
 }
+section {
+  margin: 70px 0;
+}
 
 /*header*/
 .underline {
@@ -151,11 +154,12 @@ header .socials ul li a img {
   margin-bottom: 10px;
 }
 #projecten article a figure figcaption {
-  color: white;
+  color: black;
   transition-duration: 0.5s;
+  text-align: left;
 }
 #projecten article a:hover figure figcaption {
-  color: black;
+  color: white;
 }
 #projecten article a figure {
   margin: 0;
@@ -175,7 +179,7 @@ h1 {
 h2 {
   font-size: 45px;
   line-height: 10px;
-  color: #f4ee7d;
+  color: white;
   font-weight: 600;
 }
 h3 {
@@ -216,6 +220,9 @@ figcaption {
   margin-top: 10px;
   text-align: center;
 }
+label {
+  color: white;
+}
 
 /*tabel*/
 table {
@@ -250,4 +257,50 @@ table th {
 #vandenborre img {
   max-height: 450px;
   border-radius: 80px;
+}
+/*form*/
+form {
+  width: 75%;
+  color: white;
+}
+
+input,
+textarea {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+}
+input,
+textarea {
+  width: 40%;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid white;
+  padding-left: 20px;
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+}
+textarea {
+  padding-top: 20px;
+  width: 60%;
+}
+input {
+  height: 50px;
+}
+input[type="submit"] {
+  margin-top: 10px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+input[type="submit"]:hover {
+  background: white;
+  color: black;
 }
