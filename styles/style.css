@@ -1,0 +1,233 @@
+/*algemeen*/
+
+html {
+  font-family: "Courier New", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+*::selection {
+  background-color: #f04c25;
+  color: white;
+}
+header {
+  background-color: #78a6c8;
+  padding: 10px 100px 20px 100px;
+  height: 150px;
+  margin: 0 0 40px 0;
+  box-shadow: 2px 2px 2px 1px #78a5c846;
+}
+main {
+  padding: 10px 100px 10px 100px;
+}
+footer {
+  padding: 0 50px 0 50px;
+}
+article {
+  margin: 70px 0;
+}
+article p {
+  width: 80%;
+}
+
+/*header*/
+.underline {
+  border-bottom: 2px solid #f04c25;
+}
+header .navigatie {
+  float: right;
+  height: 100%;
+  margin-top: 40px;
+}
+header .navigatie ul {
+  list-style-type: none;
+  justify-content: left;
+  padding: 0;
+  margin: 0;
+}
+header .navigatie ul li {
+  width: auto;
+  margin: 0 0px 0 50px;
+  display: inline-block;
+}
+.navigatie ul li a {
+  color: black;
+  font-size: 25px;
+  transition-duration: 0.5s;
+  border-bottom: 2px solid transparent;
+}
+.navigatie ul li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #f04c25;
+}
+header .socials {
+  float: right;
+  width: 50%;
+  height: 25px;
+  margin-top: 10px;
+}
+header .socials ul {
+  margin: 0;
+  list-style-type: none;
+}
+header .socials ul li {
+  float: right;
+  margin: 0 0 0 25px;
+}
+header .socials ul li a img {
+  height: 30px;
+  transition-duration: 1s;
+}
+.socials ul li a img:hover {
+  transform: rotate(360deg);
+}
+/*home*/
+#intro {
+  width: 80%;
+  float: left;
+  margin: 0 0 50px 0;
+}
+#profiel {
+  float: right;
+  width: calc(19%-50px);
+  margin: 0 0 50px 0;
+}
+#profiel img {
+  max-height: 350px;
+  border-radius: 40%;
+}
+/*over mij*/
+#youtube {
+  width: 50%;
+  float: left;
+}
+#video {
+  float: right;
+  margin: 100px 0;
+}
+/*mijn projecten*/
+#projecten {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#projecten article {
+  width: 30%;
+  height: 30%;
+  margin: 10px 40px 50px 0;
+}
+#projecten article a:hover {
+  text-decoration: none;
+}
+#projecten article a figure img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+#projecten article a figure figcaption {
+  color: white;
+  transition-duration: 0.5s;
+}
+#projecten article a:hover figure figcaption {
+  color: black;
+}
+#projecten article a figure {
+  margin: 0;
+}
+/*tekst elementen*/
+
+h1 {
+  float: left;
+  height: 100%;
+  margin: 30px 0 0 0;
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  font-family: "Source Sans 3", sans-serif;
+}
+h2 {
+  font-size: 45px;
+  line-height: 10px;
+  color: black;
+  font-weight: 600;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
+h4 {
+  font-size: 20px;
+}
+p,
+li {
+  font-size: 18px;
+  line-height: 23px;
+  color: #326789;
+  font-weight: 500;
+}
+blockquote {
+  font-size: 25px;
+  line-height: 40px;
+}
+footer p {
+  text-align: center;
+  width: 100%;
+}
+
+/*afbeeldingen*/
+
+/*knoppen*/
+
+.contact-icons {
+  height: 40px;
+  margin: 0 10px 10px 0;
+  transition: transform 1s ease-in-out;
+}
+.contact-icons:hover {
+  transform: translateY(5px);
+}
+.back {
+  font-size: 15px;
+}
+a {
+  color: #e65c4f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*tabel*/
+table {
+  width: 80%;
+  text-align: left;
+}
+table tr th {
+  font-size: 18px;
+  color: #326789;
+  font-weight: 500;
+}
+table thead th {
+  color: black;
+  font-weight: 600;
+}
+table th {
+  padding: 10px 0;
+}
+
+/*projecten*/
+.projecten {
+  height: 500px;
+}
+footer {
+  width: 100%;
+  clear: both;
+}
