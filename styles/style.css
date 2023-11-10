@@ -93,6 +93,7 @@ header .socials ul li a img {
   height: 30px;
   transition-duration: 1s;
 }
+
 .socials ul li a img:hover {
   transform: rotate(360deg);
 }
