@@ -160,3 +160,19 @@ span {
   color: #e65c4f;
   font-weight: 600;
 }
+
+@media screen and (max-width: 675px) {
+  .navigatie {
+    display: none;
+  }
+  header {
+    background-color: #cccccc;
+    padding: 10px 20px 20px 20px;
+    height: 150px;
+    margin: 0 0 40px 0;
+    box-shadow: 2px 2px 2px 1px #cccccc65;
+  }
+  main {
+    padding: 10px 20px 10px 20px;
+  }
+}
