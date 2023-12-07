@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="/scripts/hamburger.js"></script>
   </head>
   <body>
     <header>
@@ -43,11 +44,12 @@
       <a href="https://wynssimon.be"
         ><h1>Simon <span>Wyns</span></h1></a
       >
+      <img onclick="hamb()" id="hamburger" src="/img/hamburger.png" />
       <nav class="navigatie">
         <ul>
           <li><a class="nonunderline" href="../index.html">Home</a></li>
-          <li class="underline">
-            <a class="nonunderline" href="../pages/overmij.html">Over mij</a>
+          <li>
+            <a class="underline" href="../pages/overmij.html">Over mij</a>
           </li>
           <li>
             <a class="nonunderline" href="../pages/projecten.html">Projecten</a>

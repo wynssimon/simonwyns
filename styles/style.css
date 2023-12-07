@@ -160,18 +160,36 @@ span {
   color: #e65c4f;
   font-weight: 600;
 }
+#hamburger {
+  display: none;
+}
 
 @media screen and (max-width: 675px) {
   .navigatie {
     display: none;
   }
+
+  header .navigatie {
+    float: none;
+    margin-top: 20px;
+  }
+  header .navigatie ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header .navigatie ul li {
+    margin: 10px 0px;
+  }
   header {
     background-color: #cccccc;
-    padding: 10px 20px 20px 20px;
-    height: 150px;
+    padding: 10px 20px 0px 20px;
+    height: 100%;
     margin: 0 0 40px 0;
     box-shadow: 2px 2px 2px 1px #cccccc65;
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
   }
@@ -192,5 +210,10 @@ span {
   }
   header .socials ul li {
     float: none;
+  }
+  #hamburger {
+    width: 50px;
+    margin: 25px auto 10px auto;
+    display: block;
   }
 }
