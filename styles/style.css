@@ -171,8 +171,26 @@ span {
     height: 150px;
     margin: 0 0 40px 0;
     box-shadow: 2px 2px 2px 1px #cccccc65;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
   }
   main {
     padding: 10px 20px 10px 20px;
+  }
+  h1 {
+    text-align: center;
+    float: none;
+    margin: 0px 0 0 0;
+  }
+  .socials {
+    display: none;
+  }
+  .socials ul {
+    display: flex;
+    flex-direction: row;
+  }
+  header .socials ul li {
+    float: none;
   }
 }
