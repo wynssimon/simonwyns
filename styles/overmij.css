@@ -29,3 +29,31 @@ h3 {
   float: right;
   margin: 100px 0;
 }
+@media screen and (max-width: 675px) {
+  article {
+    width: 100%;
+  }
+  #youtube {
+    float: none;
+    width: 100%;
+  }
+  #video {
+    float: none;
+    width: 90vw;
+  }
+  #video iframe {
+    width: 90vw;
+  }
+  #studie {
+    width: 100%;
+    float: none;
+  }
+  #ik {
+    width: 100%;
+    float: none;
+  }
+  #vrijetijd {
+    float: none;
+    width: 100%;
+  }
+}

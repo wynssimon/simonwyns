@@ -20,17 +20,11 @@ form {
 }
 input,
 textarea {
-  display: inline-block;
-  margin-bottom: 10px;
-  color: white;
-  font-family: "Source Sans 3", sans-serif;
-}
-input,
-textarea {
   width: 40%;
   border-radius: 10px;
   background: none;
   border: 1px solid white;
+  color: white;
   padding-left: 20px;
   display: inline-block;
   margin: 10px 10px 10px 0;
@@ -62,4 +56,35 @@ input[type="submit"]:hover {
 }
 label {
   color: white;
+}
+@media screen and (max-width: 675px) {
+  #profiel {
+    float: none;
+    margin: 0 0 50px 0;
+  }
+  #profiel img {
+    max-height: 300px;
+    border-radius: 80px;
+  }
+  #intro {
+    width: 100%;
+    float: none;
+  }
+  form {
+    width: 100%;
+  }
+  input,
+  textarea {
+    width: 80%;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding-left: 20px;
+    display: block;
+    margin: 15px 10px 10px 0;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Courier New", Courier, monospace;
+  }
 }
