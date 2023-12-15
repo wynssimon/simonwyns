@@ -16,9 +16,6 @@ body {
   background-color: #e65c4f;
   color: white;
 }
-main {
-  padding: 10px 100px 10px 100px;
-}
 footer {
   padding: 0 50px 0 50px;
 }
@@ -39,23 +36,29 @@ section {
 /*header*/
 header {
   background-color: #cccccc;
-  padding: 10px 100px 20px 100px;
-  height: 150px;
+  padding: 10px 20px 0px 20px;
+  height: 100%;
   margin: 0 0 40px 0;
   box-shadow: 2px 2px 2px 1px #cccccc65;
+  display: flex;
+  flex-direction: column;
 }
 header .navigatie {
-  float: right;
+  float: none;
   margin-top: 20px;
+  display: none;
 }
 header .navigatie ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 header .navigatie ul li {
   width: auto;
-  margin: 0 0px 0 50px;
+  margin: 10px 0px;
   display: inline-block;
 }
 .navigatie ul li a {
@@ -74,39 +77,17 @@ header .navigatie ul li {
   transition-duration: 0.5s;
   border-bottom: 2px solid transparent;
 }
-header .socials {
-  float: right;
-  width: 50%;
-  height: 30px;
-  margin-top: 5px;
-}
-header .socials ul {
-  margin: 0;
-  list-style-type: none;
-}
-header .socials ul li {
-  float: right;
-  margin: 0 0 0 25px;
-}
-header .socials ul li a img {
-  height: 30px;
-  transition-duration: 1s;
-}
-
-.socials ul li a img:hover {
-  transform: rotate(360deg);
-}
-
 /*tekst elementen*/
 h1 {
-  float: left;
-  margin: 40px 0 0 0;
   color: black;
   font-size: 70px;
   font-weight: 550;
   line-height: 60px;
   cursor: pointer;
   font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  float: none;
+  margin: 0px 0 0 0;
 }
 h2 {
   font-size: 45px;
@@ -160,60 +141,88 @@ span {
   color: #e65c4f;
   font-weight: 600;
 }
-#hamburger {
+main {
+  padding: 10px 20px 10px 20px;
+}
+.socials {
   display: none;
 }
-
-@media screen and (max-width: 675px) {
-  .navigatie {
-    display: none;
-  }
-
-  header .navigatie {
-    float: none;
-    margin-top: 20px;
-  }
-  header .navigatie ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  header .navigatie ul li {
-    margin: 10px 0px;
-  }
-  header {
-    background-color: #cccccc;
-    padding: 10px 20px 0px 20px;
-    height: 100%;
-    margin: 0 0 40px 0;
-    box-shadow: 2px 2px 2px 1px #cccccc65;
-    display: flex;
-    flex-direction: column;
-  }
+#hamburger {
+  width: 50px;
+  margin: 25px auto 10px auto;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+  /*algemeen*/
   main {
-    padding: 10px 20px 10px 20px;
+    padding: 10px 100px 10px 100px;
   }
-  h1 {
-    text-align: center;
-    float: none;
-    margin: 0px 0 0 0;
-  }
-  .socials {
-    display: none;
-  }
-  .socials ul {
-    display: flex;
-    flex-direction: row;
-  }
-  header .socials ul li {
-    float: none;
-  }
-  #hamburger {
-    width: 50px;
-    margin: 25px auto 10px auto;
+  /*header*/
+  header {
+    padding: 10px 100px 20px 100px;
+    height: 150px;
     display: block;
   }
+  header .navigatie {
+    float: right;
+    display: block;
+  }
+  header .navigatie ul {
+    display: block;
+  }
+  header .navigatie ul li {
+    margin: 0 0px 0 50px;
+  }
+  .navigatie ul li a {
+    color: black;
+    font-size: 25px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .nonunderline:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #e65c4f;
+  }
+  .underline {
+    border-bottom: 2px solid #e65c4f;
+  }
+  .nonunderline {
+    transition-duration: 0.5s;
+    border-bottom: 2px solid transparent;
+  }
+  header .socials {
+    float: right;
+    width: 50%;
+    height: 30px;
+    margin-top: 5px;
+    display: block;
+  }
+  header .socials ul {
+    margin: 0;
+    list-style-type: none;
+  }
+  header .socials ul li {
+    float: right;
+    margin: 0 0 0 25px;
+  }
+  header .socials ul li a img {
+    height: 30px;
+    transition-duration: 1s;
+  }
+
+  .socials ul li a img:hover {
+    transform: rotate(360deg);
+  }
+  /*tekst elementen*/
+  h1 {
+    float: left;
+    margin: 40px 0 0 0;
+  }
+
+  #hamburger {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
 }
