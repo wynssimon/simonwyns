@@ -16,6 +16,9 @@ body {
   background-color: #e65c4f;
   color: white;
 }
+main {
+  padding: 10px 20px 10px 20px;
+}
 footer {
   padding: 0 50px 0 50px;
 }
@@ -76,6 +79,14 @@ header .navigatie ul li {
 .nonunderline {
   transition-duration: 0.5s;
   border-bottom: 2px solid transparent;
+}
+.socials {
+  display: none;
+}
+#hamburger {
+  width: 50px;
+  margin: 25px auto 10px auto;
+  display: block;
 }
 /*tekst elementen*/
 h1 {
@@ -141,17 +152,7 @@ span {
   color: #e65c4f;
   font-weight: 600;
 }
-main {
-  padding: 10px 20px 10px 20px;
-}
-.socials {
-  display: none;
-}
-#hamburger {
-  width: 50px;
-  margin: 25px auto 10px auto;
-  display: block;
-}
+
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1024px) {
@@ -164,6 +165,15 @@ main {
     padding: 10px 100px 20px 100px;
     height: 150px;
     display: block;
+    /*
+    display:grid;
+    grid-template-areas:
+    "top soc"
+    "titel navigatie";
+    align-content:stretch; alles even hoog maken;
+    align-items:baseline;
+    justify-content:space-between;
+    */
   }
   header .navigatie {
     float: right;
@@ -174,22 +184,6 @@ main {
   }
   header .navigatie ul li {
     margin: 0 0px 0 50px;
-  }
-  .navigatie ul li a {
-    color: black;
-    font-size: 25px;
-    font-family: "Courier New", Courier, monospace;
-  }
-  .nonunderline:hover {
-    text-decoration: none;
-    border-bottom: 2px solid #e65c4f;
-  }
-  .underline {
-    border-bottom: 2px solid #e65c4f;
-  }
-  .nonunderline {
-    transition-duration: 0.5s;
-    border-bottom: 2px solid transparent;
   }
   header .socials {
     float: right;
@@ -210,7 +204,6 @@ main {
     height: 30px;
     transition-duration: 1s;
   }
-
   .socials ul li a img:hover {
     transform: rotate(360deg);
   }
@@ -219,10 +212,7 @@ main {
     float: left;
     margin: 40px 0 0 0;
   }
-
   #hamburger {
     display: none;
   }
-}
-@media screen and (max-width: 767px) {
 }

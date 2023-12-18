@@ -1,8 +1,3 @@
-.projectafbeeldingen figure {
-  display: inline-block;
-  width: 40%;
-  margin: 0 25px 0 0;
-}
 .projectafbeeldingen figure img {
   width: 100%;
   border-radius: 10px;
@@ -11,10 +6,17 @@
   text-align: left;
 }
 
-@media screen and (max-width: 675px) {
+.projectafbeeldingen figure {
+  display: inline-block;
+  width: 80%;
+  margin: 0 0px 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
   .projectafbeeldingen figure {
-    display: inline-block;
-    width: 80%;
-    margin: 0 0px 40px 0;
+    width: 40%;
+    margin: 0 25px 0 0;
   }
 }
