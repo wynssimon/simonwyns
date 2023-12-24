@@ -19,30 +19,10 @@ input[type="submit"]:hover {
 label {
   color: white;
 }
-#profiel {
-  float: none;
-  margin: 0 0 50px 0;
-  width: 20%;
-}
-#profiel img {
-  max-height: 300px;
-  border-radius: 80px;
-}
-#intro {
-  width: 100%;
-  float: none;
-  margin: 0 0 50px 0;
-}
-main {
-  display: flex;
-  flex-direction: column;
-}
-main article p {
-  width: 100%;
-}
 form {
   width: 100%;
   color: white;
+  margin: 50px 0;
 }
 input,
 textarea {
@@ -53,32 +33,21 @@ textarea {
   color: white;
   padding-left: 20px;
   display: block;
-  margin: 15px 10px 10px 0;
+  margin: 20px 0;
   font-size: 18px;
   line-height: 25px;
   font-family: "Courier New", Courier, monospace;
 }
 
 @media screen and (min-width: 768px) {
+  input,
+  textarea {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 1024px) {
-  main {
-    display: block;
-  }
-  /*home*/
-  #intro {
-    width: 75%;
-    float: left;
-  }
-  #profiel {
-    float: right;
-  }
-  #profiel img {
-    max-height: 450px;
-  }
-  /*form*/
   form {
-    width: 75%;
+    width: calc(100vw - 160px);
   }
   input,
   textarea {
@@ -89,5 +58,8 @@ textarea {
   textarea {
     padding-top: 20px;
     width: 60%;
+  }
+  #intro {
+    height: fit-content;
   }
 }

@@ -2,14 +2,10 @@
   width: 100%;
   border-radius: 10px;
 }
-.projectafbeeldingen figure figcaption {
-  text-align: left;
-}
-
 .projectafbeeldingen figure {
   display: inline-block;
   width: 80%;
-  margin: 0 0px 40px 0;
+  margin: 40px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -17,6 +13,10 @@
 @media screen and (min-width: 1024px) {
   .projectafbeeldingen figure {
     width: 40%;
-    margin: 0 25px 0 0;
+    margin: 10px 25px 0 0;
+  }
+  .projectafbeeldingen {
+    width: 100%;
+    display: flex;
   }
 }

@@ -1,76 +1,25 @@
-/*over mij*/
-h3 {
-  margin-top: 0;
-}
-#ik img {
-  max-height: 450px;
-  border-radius: 80px;
-}
-article {
-  width: 100%;
-}
-#youtube {
-  float: none;
-  width: 100%;
-}
-#video {
-  float: none;
-  width: 80vw;
-  margin: 0;
-}
 #video iframe {
-  width: 100%;
-}
-#studie {
-  width: 100%;
-  float: none;
-}
-#ik {
-  width: 100%;
-  float: none;
-}
-#vrijetijd {
-  float: none;
-  width: 100%;
+  width: fit-content;
 }
 
 @media screen and (min-width: 768px) {
+  #video {
+    height: 400px;
+    width: calc(100vw - 100px);
+  }
+  #video iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media screen and (min-width: 1024px) {
-  /*over mij*/
-  #studie {
-    width: 75%;
-    float: left;
-    margin: 0 0 70px 0;
-  }
-  h3 {
-    margin-top: 0;
-  }
-  #ik {
-    float: right;
-    width: 20%;
-    margin: 0 0 70px 0;
-  }
-  #ik img {
-    max-height: 450px;
-    border-radius: 80px;
-  }
-  #vrijetijd {
-    width: 75%;
-    float: left;
-    margin: 0 0 70px 0;
+  #video {
+    width: 50%;
   }
   #youtube {
     width: 50%;
-    float: left;
   }
-  #video {
-    float: right;
-    margin: 100px 0;
-    width: 50%;
-  }
-
-  #video iframe {
-    width: 100%;
+  #vrijetijd {
+    height: fit-content;
   }
 }

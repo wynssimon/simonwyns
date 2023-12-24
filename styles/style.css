@@ -4,6 +4,10 @@ html {
   box-sizing: border-box;
   background-color: #151515;
 }
+main {
+  display: flex;
+  flex-direction: column;
+}
 *,
 *:before,
 *:after {
@@ -17,23 +21,31 @@ body {
   color: white;
 }
 main {
-  padding: 10px 20px 10px 20px;
+  padding: 0 30px;
 }
 footer {
   padding: 0 50px 0 50px;
 }
+section {
+  margin: 10px 0;
+}
 article {
-  margin: 70px 0;
+  margin: 10px 0;
 }
 article p {
-  width: 80%;
+  width: 100%;
+}
+figure {
+  margin: 10px 0;
+  width: 20%;
+}
+figure img {
+  max-height: 300px;
+  border-radius: 80px;
 }
 footer {
   width: 100%;
   clear: both;
-}
-section {
-  margin: 70px 0;
 }
 
 /*header*/
@@ -69,22 +81,12 @@ header .navigatie ul li {
   font-size: 25px;
   font-family: "Courier New", Courier, monospace;
 }
-.nonunderline:hover {
-  text-decoration: none;
-  border-bottom: 2px solid #e65c4f;
-}
-.underline {
-  border-bottom: 2px solid #e65c4f;
-}
-.nonunderline {
-  transition-duration: 0.5s;
-  border-bottom: 2px solid transparent;
-}
+
 .socials {
   display: none;
 }
 #hamburger {
-  width: 50px;
+  width: 40px;
   margin: 25px auto 10px auto;
   display: block;
 }
@@ -102,25 +104,22 @@ h1 {
 }
 h2 {
   font-size: 45px;
+  width: 100%;
   line-height: 45px;
   color: white;
   font-weight: 600;
   font-family: "Courier New", Courier, monospace;
-  margin-bottom: 50px;
 }
 h3 {
   font-size: 30px;
   font-weight: 600;
   color: white;
-  margin: 0;
   font-family: "Courier New", Courier, monospace;
 }
 h4 {
   font-size: 20px;
   color: white;
   font-family: "Courier New", Courier, monospace;
-  margin-top: 50px;
-  margin-bottom: 10px;
 }
 p,
 li {
@@ -154,26 +153,23 @@ span {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    padding: 0 50px;
+  }
 }
 @media screen and (min-width: 1024px) {
   /*algemeen*/
   main {
-    padding: 10px 100px 10px 100px;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   /*header*/
   header {
-    padding: 10px 100px 20px 100px;
+    padding: 10px 80px 20px 80px;
     height: 150px;
     display: block;
-    /*
-    display:grid;
-    grid-template-areas:
-    "top soc"
-    "titel navigatie";
-    align-content:stretch; alles even hoog maken;
-    align-items:baseline;
-    justify-content:space-between;
-    */
   }
   header .navigatie {
     float: right;
@@ -183,7 +179,7 @@ span {
     display: block;
   }
   header .navigatie ul li {
-    margin: 0 0px 0 50px;
+    margin: 0 0px 0 20px;
   }
   header .socials {
     float: right;
@@ -207,6 +203,17 @@ span {
   .socials ul li a img:hover {
     transform: rotate(360deg);
   }
+  .nonunderline:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #e65c4f;
+  }
+  .underline {
+    border-bottom: 2px solid #e65c4f;
+  }
+  .nonunderline {
+    transition-duration: 0.5s;
+    border-bottom: 2px solid transparent;
+  }
   /*tekst elementen*/
   h1 {
     float: left;
@@ -214,5 +221,20 @@ span {
   }
   #hamburger {
     display: none;
+  }
+  article p {
+    width: 80%;
+  }
+  article {
+    width: 75%;
+    float: left;
+  }
+  figure {
+    float: right;
+    width: 25%;
+  }
+  figure img {
+    width: 100%;
+    max-height: max-content;
   }
 }

@@ -1,28 +1,20 @@
-/*mijn projecten*/
-#projecten {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 #projecten article a:hover {
   text-decoration: none;
 }
 #projecten article a figure img {
   width: 100%;
   border-radius: 15px;
-  margin-bottom: 10px;
 }
-
 #projecten article a:hover figure figcaption {
   color: white;
 }
 #projecten article a figure {
   margin: 0;
+  width: 100%;
 }
 #projecten article {
   width: 100%;
-  margin: 10px 0px 10px 0;
+  margin: 50px 0;
 }
 #projecten article a figure figcaption {
   color: white;
@@ -30,6 +22,15 @@
 }
 
 @media screen and (min-width: 768px) {
+  #projecten {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  #projecten article {
+    width: 350px;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1024px) {
   #projecten article {
