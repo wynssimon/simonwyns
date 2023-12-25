@@ -15,6 +15,7 @@
 }
 #naam {
   grid-area: naam;
+  width: 85%;
 }
 #foto1 {
   grid-area: foto1;
@@ -27,7 +28,15 @@ figure img {
 }
 #info {
   grid-area: info;
+  width: 100%;
 }
+#repository {
+  width: calc(100vw - 60px);
+  display: block;
+  overflow-wrap: break-word;
+  margin-top: 20px;
+}
+
 #foto2 {
   grid-area: foto2;
 }
@@ -74,6 +83,9 @@ figure img {
   p {
     width: 100%;
   }
+  #repository {
+    width: calc(100vw - 100px);
+  }
 }
 @media screen and (min-width: 1024px) {
   figure img {
@@ -81,5 +93,8 @@ figure img {
   }
   #info {
     width: 60%;
+  }
+  #repository {
+    width: calc(100vw - 160px);
   }
 }

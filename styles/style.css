@@ -22,12 +22,6 @@ main {
 footer {
   padding: 0 50px 0 50px;
 }
-section {
-  margin: 10px 0;
-}
-article {
-  margin: 10px 0;
-}
 article p {
   width: 100%;
 }
@@ -39,7 +33,6 @@ figure img {
 }
 footer {
   width: 100%;
-  clear: both;
 }
 
 /*header*/
@@ -109,15 +102,18 @@ h3 {
   font-size: 30px;
   font-weight: 600;
   color: white;
+  margin: 0;
   font-family: "Courier New", Courier, monospace;
 }
 h4 {
   font-size: 20px;
   color: white;
+  margin: 0;
   font-family: "Courier New", Courier, monospace;
 }
 p,
-li {
+li,
+a {
   font-size: 20px;
   line-height: 25px;
   font-weight: 300;
