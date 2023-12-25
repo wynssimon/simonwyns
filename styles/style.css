@@ -100,13 +100,14 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   float: none;
-  margin: 0px 0 0 0;
+  margin: 0;
 }
 h2 {
   font-size: 45px;
   width: 100%;
   line-height: 45px;
   color: white;
+  margin: 0;
   font-weight: 600;
   font-family: "Courier New", Courier, monospace;
 }
@@ -160,10 +161,7 @@ span {
 @media screen and (min-width: 1024px) {
   /*algemeen*/
   main {
-    padding: 0px 80px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 20px 80px;
   }
   /*header*/
   header {
@@ -227,11 +225,9 @@ span {
   }
   article {
     width: 75%;
-    float: left;
   }
   figure {
-    float: right;
-    width: 25%;
+    width: 100%;
   }
   figure img {
     width: 100%;

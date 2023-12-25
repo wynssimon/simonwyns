@@ -1,3 +1,26 @@
+#homeBlock {
+  display: grid;
+  grid-template-columns: 12fr;
+  grid-template-areas:
+    "titel"
+    "foto"
+    "tekst"
+    "contact";
+  gap: 25px;
+}
+#titeltje {
+  grid-area: titel;
+}
+#tekst {
+  grid-area: tekst;
+}
+#profiel {
+  grid-area: foto;
+}
+#contact {
+  grid-area: contact;
+}
+
 input {
   height: 50px;
 }
@@ -44,6 +67,33 @@ textarea {
   textarea {
     width: 50%;
   }
+  #homeBlock {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-template-areas:
+      "titel foto"
+      "tekst foto"
+      "contact contact";
+    gap: 0px;
+    align-items: start;
+    align-content: start;
+  }
+  #titeltje {
+    grid-area: titel;
+    border: 1px solid red;
+    height: fit-content;
+  }
+  #tekst {
+    grid-area: tekst;
+    border: 1px solid red;
+    height: 100%;
+  }
+  #profiel {
+    grid-area: foto;
+  }
+  #contact {
+    grid-area: contact;
+  }
 }
 @media screen and (min-width: 1024px) {
   form {
@@ -58,8 +108,5 @@ textarea {
   textarea {
     padding-top: 20px;
     width: 60%;
-  }
-  #intro {
-    height: fit-content;
   }
 }

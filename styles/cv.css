@@ -36,11 +36,11 @@ table {
     width: 100%;
   }
   #ervaring {
-    width: 75%;
+    width: 70%;
     float: left;
   }
   #vandenborre {
-    float: right;
     width: 25%;
+    float: right;
   }
 }
