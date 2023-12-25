@@ -75,7 +75,11 @@
         </p>
       </article>
       <figure id="parijs">
-        <img src="../img/parijs.jpg" alt="Simon in Parijs" />
+        <picture>
+          <source media="(min-width: 768)" srcset="../img/parijs.jpg" />
+          <source srcset="../img/parijs-sm.jpg" />
+          <img src="../img/parijs-sm.jpg" alt="Simon in Parijs" />
+        </picture>
       </figure>
       <article id="studie">
         <h3>Studie</h3>

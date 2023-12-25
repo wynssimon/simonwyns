@@ -87,10 +87,18 @@
         >
       </article>
       <figure id="foto1">
-        <img src="../img/eerstesite1.jpg" alt="Portfoliosite mockup" />
+        <picture>
+          <source media="(min-width:768px )" srcset="../img/eerstesite1.jpg" />
+          <source srcset="../img/eerstesite1-sm.jpg" />
+          <img src="../img/eerstesite1-sm.jpg" alt="Portfoliosite mockup" />
+        </picture>
       </figure>
       <figure id="foto2">
-        <img src="../img/eerstesite2.jpg" alt="Portfoliosite code" />
+        <picture>
+          <source media="(min-width: 768)" srcset="../img/eerstesite2.jpg" />
+          <source srcset="../img/eerstesite2-sm.jpg" />
+          <img src="../img/eerstesite2.jpg" alt="Portfoliosite code" />
+        </picture>
       </figure>
     </main>
     <footer>

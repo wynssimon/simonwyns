@@ -37,12 +37,12 @@ figure img {
 @media screen and (min-width: 768px) {
   #projectDetailsBlock {
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-columns: 6fr 6fr;
     grid-template-areas:
-      "nummer nummer nummer"
-      "naam naam naam "
-      "info info ."
-      "foto1 foto2 foto2";
+      "nummer nummer"
+      "naam naam "
+      "info info"
+      "foto1 foto2";
     gap: 50px;
   }
   #nummer {
@@ -55,20 +55,19 @@ figure img {
     grid-area: foto1;
   }
   figure img {
-    width: calc(33.33vw - 100px);
+    width: calc(50vw - 100px);
   }
   figure {
     width: 100%;
   }
   #info {
     grid-area: info;
+    width: 80%;
   }
   #foto2 {
     grid-area: foto2;
   }
-  #foto3 {
-    grid-area: foto3;
-  }
+
   article {
     width: 100%;
   }
@@ -78,6 +77,9 @@ figure img {
 }
 @media screen and (min-width: 1024px) {
   figure img {
-    width: calc(33.33vw - 160px);
+    width: calc(50vw - 160px);
+  }
+  #info {
+    width: 60%;
   }
 }
