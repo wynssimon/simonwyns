@@ -17,6 +17,9 @@
 #profiel {
   grid-area: foto;
 }
+#profiel img {
+  width: calc(100vw - 100px);
+}
 #contact {
   grid-area: contact;
 }
@@ -78,18 +81,20 @@ textarea {
   }
   #titeltje {
     grid-area: titel;
-    border: 1px solid red;
     height: fit-content;
+    align-self: end;
   }
   #tekst {
     grid-area: tekst;
-    border: 1px solid red;
-    height: 100%;
+    height: fit-content;
     width: 80%;
     margin: 0;
   }
   #profiel {
     grid-area: foto;
+  }
+  #profiel img {
+    width: 100%;
   }
   #contact {
     grid-area: contact;

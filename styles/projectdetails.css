@@ -22,7 +22,7 @@
 
 figure img {
   width: calc(100vw - 60px);
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 2px 2px 2px 1px #e65c4f;
 }
 #info {

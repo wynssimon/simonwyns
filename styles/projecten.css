@@ -20,12 +20,16 @@
   color: white;
   text-align: left;
 }
+#projecten {
+  margin-top: 25px;
+}
 
 @media screen and (min-width: 768px) {
   #projecten {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    margin-top: 50px;
   }
   #projecten article {
     width: 350px;

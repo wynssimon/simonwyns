@@ -4,10 +4,6 @@ html {
   box-sizing: border-box;
   background-color: #151515;
 }
-main {
-  display: flex;
-  flex-direction: column;
-}
 *,
 *:before,
 *:after {
@@ -155,15 +151,16 @@ span {
   main {
     padding: 0 50px;
   }
+  figure img {
+    border-radius: 50px;
+  }
 }
 @media screen and (min-width: 1024px) {
   /*algemeen*/
   main {
     padding: 20px 80px;
   }
-  article p {
-    width: 100%;
-  }
+
   article {
     width: 75%;
   }
