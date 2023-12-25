@@ -1,22 +1,83 @@
-.projectafbeeldingen figure img {
-  width: 100%;
-  border-radius: 10px;
+#projectDetailsBlock {
+  display: grid;
+  grid-template-columns: 12fr;
+  grid-template-areas:
+    "nummer"
+    "naam"
+    "foto1"
+    "info"
+    "foto2"
+    "foto3";
+  gap: 25px;
 }
-.projectafbeeldingen figure {
-  display: inline-block;
-  width: 80%;
-  margin: 40px 0;
+#nummer {
+  grid-area: nummer;
+}
+#naam {
+  grid-area: naam;
+}
+#foto1 {
+  grid-area: foto1;
 }
 
+figure img {
+  width: calc(100vw - 60px);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px #e65c4f;
+}
+#info {
+  grid-area: info;
+}
+#foto2 {
+  grid-area: foto2;
+}
+#foto3 {
+  grid-area: foto3;
+}
 @media screen and (min-width: 768px) {
+  #projectDetailsBlock {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-areas:
+      "nummer nummer nummer"
+      "naam naam naam "
+      "info info ."
+      "foto1 foto2 foto2";
+    gap: 50px;
+  }
+  #nummer {
+    grid-area: nummer;
+  }
+  #naam {
+    grid-area: naam;
+  }
+  #foto1 {
+    grid-area: foto1;
+  }
+  figure img {
+    width: calc(33.33vw - 100px);
+  }
+  figure {
+    width: 100%;
+  }
+  #info {
+    grid-area: info;
+  }
+  #foto2 {
+    grid-area: foto2;
+  }
+  #foto3 {
+    grid-area: foto3;
+  }
+  article {
+    width: 100%;
+  }
+  p {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1024px) {
-  .projectafbeeldingen figure {
-    width: 40%;
-    margin: 10px 25px 0 0;
-  }
-  .projectafbeeldingen {
-    width: 100%;
-    display: flex;
+  figure img {
+    width: calc(33.33vw - 160px);
   }
 }

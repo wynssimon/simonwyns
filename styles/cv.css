@@ -25,22 +25,95 @@ table {
   width: 100%;
   text-align: left;
 }
-
-@media screen and (min-width: 768px) {
+#cvBlock {
+  display: grid;
+  grid-template-columns: 12fr;
+  grid-template-areas:
+    "titel"
+    "back"
+    "ervaring"
+    "foto"
+    "studie"
+    "eigenschappen"
+    "talen"
+    "contact"
+    "back2";
+  gap: 25px;
 }
-@media screen and (min-width: 1024px) {
-  #cv {
-    width: 100%;
+#titeltje {
+  grid-area: titel;
+}
+#back {
+  grid-area: back;
+}
+#ervaring {
+  grid-area: ervaring;
+}
+#vandenborre {
+  grid-area: foto;
+}
+#vandenborre img {
+  width: calc(100vw - 150px);
+}
+#studie {
+  grid-area: studie;
+}
+#eigenschappen {
+  grid-area: eigenschappen;
+}
+#talen {
+  grid-area: talen;
+}
+#contact {
+  grid-area: contact;
+}
+#back2 {
+  grid-area: back2;
+}
+@media screen and (min-width: 768px) {
+  #cvBlock {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    grid-template-areas:
+      "titel titel ."
+      "back back ."
+      "ervaring ervaring foto"
+      "studie studie foto"
+      "eigenschappen talen talen"
+      "contact contact ."
+      "back2 back2 .";
+    gap: 50px;
   }
-  table {
-    width: 100%;
+  #titeltje {
+    grid-area: titel;
+  }
+  #back {
+    grid-area: back;
   }
   #ervaring {
-    width: 70%;
-    float: left;
+    grid-area: ervaring;
   }
   #vandenborre {
-    width: 25%;
-    float: right;
+    grid-area: foto;
   }
+  #vandenborre img {
+    width: calc(25vw - 0px);
+  }
+  #studie {
+    grid-area: studie;
+  }
+  #eigenschappen {
+    grid-area: eigenschappen;
+  }
+  #talen {
+    grid-area: talen;
+  }
+  #contact {
+    grid-area: contact;
+  }
+  #back2 {
+    grid-area: back2;
+  }
+}
+@media screen and (min-width: 1024px) {
 }

@@ -74,9 +74,7 @@ textarea {
       "titel foto"
       "tekst foto"
       "contact contact";
-    gap: 0px;
-    align-items: start;
-    align-content: start;
+    gap: 50px;
   }
   #titeltje {
     grid-area: titel;
@@ -87,6 +85,8 @@ textarea {
     grid-area: tekst;
     border: 1px solid red;
     height: 100%;
+    width: 80%;
+    margin: 0;
   }
   #profiel {
     grid-area: foto;

@@ -36,11 +36,9 @@ article p {
   width: 100%;
 }
 figure {
-  margin: 10px 0;
-  width: 20%;
+  margin: 0;
 }
 figure img {
-  max-height: 300px;
   border-radius: 80px;
 }
 footer {
@@ -163,6 +161,28 @@ span {
   main {
     padding: 20px 80px;
   }
+  article p {
+    width: 100%;
+  }
+  article {
+    width: 75%;
+  }
+  figure {
+    width: 100%;
+  }
+  figure img {
+    width: 100%;
+    max-height: max-content;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #hamburger {
+    display: none;
+  }
+  h1 {
+    float: left;
+    margin: 40px 0 0 0;
+  }
   /*header*/
   header {
     padding: 10px 80px 20px 80px;
@@ -211,26 +231,5 @@ span {
   .nonunderline {
     transition-duration: 0.5s;
     border-bottom: 2px solid transparent;
-  }
-  /*tekst elementen*/
-  h1 {
-    float: left;
-    margin: 40px 0 0 0;
-  }
-  #hamburger {
-    display: none;
-  }
-  article p {
-    width: 80%;
-  }
-  article {
-    width: 75%;
-  }
-  figure {
-    width: 100%;
-  }
-  figure img {
-    width: 100%;
-    max-height: max-content;
   }
 }
