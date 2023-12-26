@@ -40,14 +40,16 @@
 @media screen and (min-width: 768px) {
   #overmijBlock {
     display: grid;
-    grid-template-columns: 6fr 3fr 3fr;
+    grid-template-columns: 6fr 6fr;
     grid-template-areas:
-      "titel titel foto"
-      "vrijetijd vrijetijd foto"
-      "studie studie foto"
-      "youtube video video";
-    gap: 50px;
+      "titel  ."
+      "vrijetijd foto"
+      "studie studie"
+      "youtube youtube"
+      "video video";
+    gap: 60px;
   }
+
   #titeltje {
     grid-area: titel;
   }
@@ -68,6 +70,8 @@
   }
   #video {
     grid-area: video;
+    height: 315px;
+    width: 560px;
   }
   #video iframe {
     width: 100%;
@@ -78,6 +82,16 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  #overmijBlock {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    grid-template-areas:
+      "titel titel foto"
+      "vrijetijd vrijetijd foto"
+      "studie studie foto"
+      "youtube video video";
+    gap: 50px;
+  }
   #video {
     height: 315px;
     width: 560px;

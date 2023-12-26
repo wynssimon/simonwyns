@@ -68,17 +68,18 @@ textarea {
 @media screen and (min-width: 768px) {
   input,
   textarea {
-    width: 50%;
+    width: 75%;
   }
   #homeBlock {
     display: grid;
-    grid-template-columns: 9fr 3fr;
+    grid-template-columns: 6fr 6fr;
     grid-template-areas:
-      "titel foto"
+      "titel ."
       "tekst foto"
       "contact contact";
-    gap: 50px;
+    gap: 60px;
   }
+
   #titeltje {
     grid-area: titel;
     height: fit-content;
@@ -87,7 +88,6 @@ textarea {
   #tekst {
     grid-area: tekst;
     height: fit-content;
-    width: 80%;
     margin: 0;
   }
   #profiel {
@@ -101,6 +101,18 @@ textarea {
   }
 }
 @media screen and (min-width: 1024px) {
+  #homeBlock {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-template-areas:
+      "titel foto"
+      "tekst foto"
+      "contact contact";
+    gap: 50px;
+  }
+  #tekst {
+    width: 80%;
+  }
   form {
     width: calc(100vw - 160px);
   }

@@ -68,9 +68,42 @@ header .navigatie ul li {
   font-size: 25px;
   font-family: "Courier New", Courier, monospace;
 }
-
+#contactSocials {
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#contactSocials ul {
+  display: flex;
+  justify-content: start;
+  padding: 0;
+}
+#contactSocials ul li {
+  float: left;
+  margin: 0 25px 0 0;
+}
 .socials {
+  float: right;
+  width: 50%;
+  height: 30px;
+  margin-top: 5px;
   display: none;
+}
+.socials ul {
+  margin: 0;
+  list-style-type: none;
+}
+.socials ul li {
+  float: right;
+  margin: 0 0 0 25px;
+}
+.socials ul li a img {
+  height: 30px;
+  transition-duration: 1s;
+}
+.socials ul li a img:hover {
+  transform: rotate(360deg);
 }
 #hamburger {
   width: 40px;
@@ -192,28 +225,10 @@ span {
   header .navigatie ul li {
     margin: 0 0px 0 20px;
   }
-  header .socials {
-    float: right;
-    width: 50%;
-    height: 30px;
-    margin-top: 5px;
+  .socials {
     display: block;
   }
-  header .socials ul {
-    margin: 0;
-    list-style-type: none;
-  }
-  header .socials ul li {
-    float: right;
-    margin: 0 0 0 25px;
-  }
-  header .socials ul li a img {
-    height: 30px;
-    transition-duration: 1s;
-  }
-  .socials ul li a img:hover {
-    transform: rotate(360deg);
-  }
+
   .nonunderline:hover {
     text-decoration: none;
     border-bottom: 2px solid #e65c4f;
