@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mijn projecten</title>
+    <title>Bootstrap Site</title>
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/projecten.css" />
+    <link rel="stylesheet" href="../styles/projectdetails.css" />
     <link rel="shortcut icon" href="../img/portfolio.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,7 +52,7 @@
             <a class="nonunderline" href="../pages/overmij.html">Over mij</a>
           </li>
           <li>
-            <a class="underline" href="../pages/projecten.html">Projecten</a>
+            <a class="nonunderline" href="../pages/projecten.html">Projecten</a>
           </li>
           <li>
             <a class="nonunderline" href="../pages/werkplekleren.html"
@@ -62,26 +62,45 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h2>Mijn projecten</h2>
-      <section id="projecten">
-        <article>
-          <a href="../pages/mijneerstesite.html">
-            <figure>
-              <img src="../img/mijnEersteWebsite.jpg" alt="eerste project" />
-              <figcaption>Portfoliosite</figcaption>
-            </figure>
-          </a>
-        </article>
-        <article>
-          <a href="../pages/bootstrap.html">
-            <figure>
-              <img src="../img/mijnEersteWebsite.jpg" alt="eerste project" />
-              <figcaption>Themasite met Bootstrap</figcaption>
-            </figure>
-          </a>
-        </article>
-      </section>
+    <main id="projectDetailsBlock">
+      <h2 id="nummer">Project #2</h2>
+      <h3 id="naam"><span>Themasite met Bootstrap</span></h3>
+      <article id="info">
+        <h4>Vak</h4>
+        <p>Responsive Design</p>
+        <h4>Opdracht</h4>
+        <p>
+          Tijdens de lessen Responsive Design leerden we met het CSS- en
+          JavaScript framework "Bootstrap" werken. Hiermee moest dan ook een
+          eerste "thema-site" gebouwd worden, onderwerp mocht zelf gekozen
+          worden. De minimum vereisten zijn: 3 pagina's, navigatie, grafische
+          elementen, responsive.
+        </p>
+        <h4>Deadline</h4>
+        <p>24 januari 2024</p>
+        <h4>Webadres</h4>
+        <p>HIER KOMT DE URL NOG</p>
+        <h4>GitHub Repository</h4>
+        <a
+          id="url"
+          href="https://github.com/wynssimon/simonwyns.git"
+          target="_blank"
+        >
+          https://github.com/wynssimon/bootstrap.git</a
+        >
+      </article>
+      <figure id="foto1">
+        <picture>
+          <source srcset="../img/placeholder.svg" />
+          <img src="../img/placeholder.svg" alt="Thema site mockup" />
+        </picture>
+      </figure>
+      <figure id="foto2">
+        <picture>
+          <source srcset="../img/placeholder.svg" />
+          <img src="../img/placeholder.svg" alt="Thema site code" />
+        </picture>
+      </figure>
     </main>
     <footer>
       <p>© 2023, all rights reserved</p>

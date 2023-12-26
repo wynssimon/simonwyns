@@ -30,11 +30,11 @@ figure img {
   grid-area: info;
   width: 100%;
 }
-#repository {
+#url {
   width: calc(100vw - 60px);
   display: block;
   overflow-wrap: break-word;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 #foto2 {
@@ -83,7 +83,7 @@ figure img {
   p {
     width: 100%;
   }
-  #repository {
+  #url {
     width: calc(100vw - 100px);
   }
 }
@@ -94,7 +94,7 @@ figure img {
   #info {
     width: 60%;
   }
-  #repository {
+  #url {
     width: calc(100vw - 160px);
   }
 }
