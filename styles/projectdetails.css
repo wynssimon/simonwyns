@@ -30,13 +30,12 @@ figure img {
   grid-area: info;
   width: 100%;
 }
-#url {
+.url {
   width: calc(100vw - 60px);
   display: block;
   overflow-wrap: break-word;
   margin: 20px 0;
 }
-
 #foto2 {
   grid-area: foto2;
 }
@@ -83,7 +82,7 @@ figure img {
   p {
     width: 100%;
   }
-  #url {
+  .url {
     width: calc(100vw - 100px);
   }
 }
@@ -94,7 +93,7 @@ figure img {
   #info {
     width: 60%;
   }
-  #url {
+  .url {
     width: calc(100vw - 160px);
   }
 }

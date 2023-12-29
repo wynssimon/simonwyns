@@ -160,6 +160,10 @@ footer p {
 a {
   color: #e65c4f;
   text-decoration: none;
+  transition-duration: 0.5s;
+}
+a:hover {
+  color: #b7665f;
 }
 p a {
   font-weight: 600;
