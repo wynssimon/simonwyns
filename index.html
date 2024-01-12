@@ -117,32 +117,42 @@
             </li>
           </ul>
         </nav>
-        <form action="post-demo.php" method="post">
+        <form action="mailform.php" method="post">
           <input
             type="text"
             id="voornaam"
-            name="Voornaam"
+            name="voornaam"
             placeholder="voornaam"
+            required
           />
           <input
             type="text"
             id="achternaam"
-            name="Familienaam"
+            name="familienaam"
             placeholder="achternaam"
+            required
           />
-          <input type="email" id="email" name="E-mail" placeholder="email" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            required
+          />
           <input
             type="tel"
             id="gsm"
-            name="Nummer"
+            name="nummer"
             placeholder="telefoonnummer"
+            required
           />
           <textarea
             id="bericht"
             cols="30"
             rows="10"
-            name="Vraag"
+            name="bericht"
             placeholder="bericht/ vraag"
+            required
           ></textarea>
           <input type="submit" value="Submit" />
         </form>
