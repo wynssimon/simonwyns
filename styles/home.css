@@ -3,8 +3,8 @@
   grid-template-columns: 12fr;
   grid-template-areas:
     "titel"
-    "foto"
     "tekst"
+    "foto"
     "contact";
   gap: 25px;
 }
