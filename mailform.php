@@ -87,8 +87,8 @@
             $email_subject = "$voornaam $familienaam sent you an email";
             $email_body = "Naam: $familienaam $voornaam\n";
             $email_body .= "Email: $email\n";
-            $email_body .= "Telefoonnummer: $nummer\n";
-            $email_body .= "Bericht: $bericht\n";
+            $email_body .= "Telefoonnummer: $nummer\n\n";
+            $email_body .= "$bericht\n";
 
             // Set content-type header for sending HTML email
             $headers = "MIME-Version: 1.0" . "\r\n";
@@ -101,6 +101,22 @@
             } else {
                 echo "<p>Fout bij het versturen van de email, probeer opnieuw.</p>";
             }
+              // Prepare email content for the sender (copy)
+            $copy_subject = "Kopie van uw bericht aan $recipient_email";
+            $copy_body = "Hieronder ziet u een kopie van uw bericht aan Simon\n\n\n";
+            $copy_body .= "Naam: $familienaam $voornaam\n";
+            $copy_body .= "Email: $email\n";
+            $copy_body .= "Telefoonnummer: $nummer\n\n";
+            $copy_body .= "$bericht\n\n";
+            $copy_body .= "Bedankt voor uw bericht. We proberen zo snel mogelijk te antwoorden.";
+
+            // Set content-type header for sending HTML email
+            $copy_headers = "MIME-Version: 1.0" . "\r\n";
+            $copy_headers .= "Content-type:text/plain;charset=UTF-8" . "\r\n";
+            $copy_headers .= "From: <$recipient_email>" . "\r\n";
+
+
+            mail($email, $copy_subject, $copy_body, $copy_headers);
         } else {
             die("Invalid request");
         }
