@@ -91,8 +91,11 @@
             $email_body .= "$bericht\n";
 
             // Set content-type header for sending HTML email
+            //MIME-Version: 1.0: MIME staat voor Multipurpose Internet Mail Extensions en is een standaard die is ontworpen om verschillende soorten gegevens (tekst, afbeeldingen, audio, video, enz.) in e-mailberichten mogelijk te maken. De MIME-Version-header geeft aan welke versie van de MIME-standaard wordt gebruikt. Hier is het "1.0".
             $headers = "MIME-Version: 1.0" . "\r\n";
+            //dit specificeert het type inhoud en de tekenset van de e-mail. Dit zorgt dat de inhoud als platte tekst behandeld wordt
             $headers .= "Content-type:text/plain;charset=UTF-8" . "\r\n";
+            //hier wordt de afzender van de mail ingesteld. \r wordt gebruikt om de cursor terug naar het begin van de regel te verplaatsen
             $headers .= "From: <$email>" . "\r\n";
 
             // Send the email
