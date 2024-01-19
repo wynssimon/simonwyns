@@ -6,11 +6,12 @@
     "tekst"
     "foto"
     "contact";
-  gap: 25px;
+  gap: 50px;
 }
 #titeltje {
   grid-area: titel;
 }
+
 #tekst {
   grid-area: tekst;
 }
@@ -22,6 +23,9 @@
 }
 #contact {
   grid-area: contact;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 input {
@@ -48,7 +52,6 @@ label {
 form {
   width: 100%;
   color: white;
-  margin: 50px 0;
 }
 input,
 textarea {
@@ -111,7 +114,7 @@ textarea {
       "titel foto"
       "tekst foto"
       "contact contact";
-    gap: 50px;
+    gap: 100px;
   }
   #tekst {
     width: 80%;

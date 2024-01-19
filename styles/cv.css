@@ -30,21 +30,17 @@ table {
   grid-template-columns: 12fr;
   grid-template-areas:
     "titel"
-    "back"
     "ervaring"
     "foto"
     "studie"
     "eigenschappen"
     "talen"
     "contact"
-    "back2";
-  gap: 25px;
+    "back";
+  gap: 50px;
 }
 #titeltje {
   grid-area: titel;
-}
-#back {
-  grid-area: back;
 }
 #ervaring {
   grid-area: ervaring;
@@ -67,8 +63,8 @@ table {
 #contact {
   grid-area: contact;
 }
-#back2 {
-  grid-area: back2;
+#back {
+  grid-area: back;
 }
 @media screen and (min-width: 768px) {
   #cvBlock {
@@ -76,19 +72,15 @@ table {
     grid-template-columns: 6fr 3fr 3fr;
     grid-template-areas:
       "titel titel ."
-      "back back ."
       "ervaring ervaring foto"
       "studie studie foto"
       "eigenschappen talen talen"
       "contact contact ."
-      "back2 back2 .";
-    gap: 50px;
+      "back back .";
+    gap: 60px;
   }
   #titeltje {
     grid-area: titel;
-  }
-  #back {
-    grid-area: back;
   }
   #ervaring {
     grid-area: ervaring;
@@ -111,8 +103,8 @@ table {
   #contact {
     grid-area: contact;
   }
-  #back2 {
-    grid-area: back2;
+  #back {
+    grid-area: back;
   }
 }
 @media screen and (min-width: 1024px) {

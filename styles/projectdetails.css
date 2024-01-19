@@ -8,7 +8,7 @@
     "info"
     "foto2"
     "foto3";
-  gap: 25px;
+  gap: 50px;
 }
 #nummer {
   grid-area: nummer;
@@ -29,6 +29,9 @@ figure img {
 #info {
   grid-area: info;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .url {
   width: calc(100vw - 60px);
@@ -42,6 +45,9 @@ figure img {
 #foto3 {
   grid-area: foto3;
 }
+h4 {
+  margin-bottom: 10px;
+}
 @media screen and (min-width: 768px) {
   #projectDetailsBlock {
     display: grid;
@@ -51,7 +57,7 @@ figure img {
       "naam naam "
       "info info"
       "foto1 foto2";
-    gap: 50px;
+    gap: 60px;
   }
   #nummer {
     grid-area: nummer;

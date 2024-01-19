@@ -8,13 +8,16 @@
     "studie"
     "youtube"
     "video";
-  gap: 25px;
+  gap: 50px;
 }
 #titeltje {
   grid-area: titel;
 }
 #vrijetijd {
   grid-area: vrijetijd;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 #parijs {
   grid-area: foto;
@@ -24,9 +27,15 @@
 }
 #studie {
   grid-area: studie;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 #youtube {
   grid-area: youtube;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 #video {
   grid-area: video;
@@ -90,7 +99,7 @@
       "vrijetijd vrijetijd foto"
       "studie studie foto"
       "youtube video video";
-    gap: 50px;
+    gap: 100px;
   }
   #video {
     height: 315px;

@@ -65,7 +65,10 @@
       </nav>
     </header>
     <main id="homeBlock">
-      <h2 id="titeltje">Hey!</h2>
+      <div id="titeltje" class="flex">
+        <img src="./img/wave.png" alt="hey!" />
+        <h2 id="">Hey!</h2>
+      </div>
       <p id="tekst">
         Ik ben Simon Wyns, 21 jaar uit Brasschaat. Ik studeer sinds september
         2023 aan de Thomas More Hogeschool te Antwerpen. Daar volg ik een
@@ -88,36 +91,43 @@
         <img src="./img/simon.jpg" alt="Mijn foto" />
       </figure>
       <article id="contact">
-        <h3>Contact</h3>
+        <div class="flex">
+          <img src="./img/contact.png" alt="contact" />
+          <h3>Contact</h3>
+        </div>
         <p>
           Aarzel zeker niet om contact op te nemen indien u een vraag of iets te
           zeggen hebt.
         </p>
-        <nav class="socials" id="contactSocials">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/simonwyns/" target="_blank">
-                <img src="./img/linkedin-w.png" alt="linkedin" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@simonwyns" target="_blank">
-                <img src="./img/youtube-w.png" alt="youtube" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/simon.wyns/" target="_blank">
-                <img src="./img/instagram-w.png" alt="instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/wynssimon" target="_blank">
-                <img src="./img/github-w.png" alt="github" />
-              </a>
-            </li>
-          </ul>
-        </nav>
+
         <form action="mailform.php" method="post">
+          <nav class="socials" id="contactSocials">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/simonwyns/"
+                  target="_blank"
+                >
+                  <img src="./img/linkedin-w.png" alt="linkedin" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@simonwyns" target="_blank">
+                  <img src="./img/youtube-w.png" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/simon.wyns/" target="_blank">
+                  <img src="./img/instagram-w.png" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/wynssimon" target="_blank">
+                  <img src="./img/github-w.png" alt="github" />
+                </a>
+              </li>
+            </ul>
+          </nav>
           <input
             type="text"
             id="voornaam"

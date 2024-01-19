@@ -84,7 +84,7 @@
             }
 
             // Prepare email content
-            $email_subject = "$voornaam $familienaam sent you an email";
+            $email_subject = "$voornaam $familienaam stuurde je zonet een email";
             $email_body = "Naam: $familienaam $voornaam\n";
             $email_body .= "Email: $email\n";
             $email_body .= "Telefoonnummer: $nummer\n\n";
@@ -105,7 +105,7 @@
                 echo "<p>Fout bij het versturen van de email, probeer opnieuw.</p>";
             }
               // Prepare email content for the sender (copy)
-            $copy_subject = "Kopie van uw bericht aan $recipient_email";
+            $copy_subject = "Kopie van uw bericht aan Simon Wyns";
             $copy_body = "Hieronder ziet u een kopie van uw bericht aan Simon\n\n\n";
             $copy_body .= "Naam: $familienaam $voornaam\n";
             $copy_body .= "Email: $email\n";
