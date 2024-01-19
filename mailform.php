@@ -111,7 +111,7 @@
             $copy_body .= "Email: $email\n";
             $copy_body .= "Telefoonnummer: $nummer\n\n";
             $copy_body .= "$bericht\n\n";
-            $copy_body .= "Bedankt voor uw bericht. We proberen zo snel mogelijk te antwoorden.";
+            $copy_body .= "Bedankt voor uw bericht. Ik probeer zo snel mogelijk te antwoorden.";
 
             // Set content-type header for sending HTML email
             $copy_headers = "MIME-Version: 1.0" . "\r\n";
@@ -126,9 +126,6 @@
         ?></main>
 
     </main>
-    <footer>
-      <p>© 2023, all rights reserved</p>
-    </footer>
   </body>
 </html>
 

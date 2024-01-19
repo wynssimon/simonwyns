@@ -13,8 +13,8 @@ body {
   margin: 0;
 }
 *::selection {
-  background-color: #e65c4f;
-  color: white;
+  color: #e65c4f;
+  background-color: #ffd869;
 }
 main {
   padding: 0 30px;
@@ -79,6 +79,8 @@ header .navigatie ul li {
   display: flex;
   justify-content: start;
   padding: 0;
+  align-items: center;
+  height: 100%;
 }
 #contactSocials ul li {
   float: left;
@@ -140,7 +142,7 @@ h3 {
   font-family: "Courier New", Courier, monospace;
 }
 h4 {
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
@@ -167,7 +169,8 @@ a {
 a:hover {
   color: #b7665f;
 }
-p a {
+p a,
+.url {
   font-weight: 600;
 }
 a:hover {
@@ -190,6 +193,10 @@ span {
 }
 .flex img {
   width: 50px;
+}
+strong {
+  color: #ffd869;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 768px) {
