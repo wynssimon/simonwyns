@@ -35,6 +35,7 @@ table {
     "foto"
     "studie"
     "eigenschappen"
+    "kennis"
     "talen"
     "contact"
     "back";
@@ -42,6 +43,9 @@ table {
 }
 #titeltje {
   grid-area: titel;
+}
+#kennis {
+  grid-area: kennis;
 }
 #videocv {
   grid-area: videocv;
@@ -73,13 +77,13 @@ table {
 @media screen and (min-width: 768px) {
   #cvBlock {
     display: grid;
-    grid-template-columns: 6fr 3fr 3fr;
+    grid-template-columns: 3fr 3fr 3fr;
     grid-template-areas:
       "titel titel ."
       "videocv videocv ."
       "ervaring ervaring foto"
       "studie studie foto"
-      "eigenschappen talen talen"
+      "eigenschappen kennis talen"
       "contact contact ."
       "back back .";
     gap: 60px;
