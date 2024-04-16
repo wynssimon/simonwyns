@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webapplicatie Spring</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/projectdetails.css" />
+    <link rel="shortcut icon" href="../img/portfolio.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="/scripts/hamburger.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="socials">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/simonwyns/" target="_blank">
+              <img src="../img/linkedin.png" alt="linkedin" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@simonwyns" target="_blank">
+              <img src="../img/youtube.png" alt="youtube" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/simon.wyns/" target="_blank">
+              <img src="../img/instagram.png" alt="instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/wynssimon" target="_blank">
+              <img src="../img/github.png" alt="github" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a id="titel" href="https://wynssimon.be"
+        ><h1>Simon <span>Wyns</span></h1></a
+      >
+      <img onclick="hamb()" id="hamburger" src="/img/hamburger.png" />
+      <nav class="navigatie">
+        <ul>
+          <li><a class="nonunderline" href="../index.html">Home</a></li>
+          <li>
+            <a class="nonunderline" href="../pages/overmij.html">Over mij</a>
+          </li>
+          <li>
+            <a class="nonunderline" href="../pages/projecten.html">Projecten</a>
+          </li>
+          <li>
+            <a class="nonunderline" href="../pages/werkplekleren.html"
+              >Werkplekleren</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="projectDetailsBlock">
+      <h2 id="nummer">Project #3</h2>
+      <h3 id="naam"><span>Webapplicatie met Spring</span></h3>
+      <article id="info">
+        <section>
+          <h4>Vak</h4>
+          <p>Advanced Programming Techniques</p>
+        </section>
+        <section>
+          <h4>Opdracht</h4>
+          <p>
+            Bij het vak Advanced Programming Techniques kregen we de opdracht om
+            een eigen webapplicatie met achterliggende database te maken in het
+            Spring Boot framework. Ik besloot om iets te maken wat mijn
+            interesseert: een applicatie waarop een lokale voetbalcompetitie de
+            matchen, klassementen, spelers, ... kan bijhouden. Om niet zelf
+            allemaal data te moeten verzinnen koos ik ervoor om de Jupiler Pro
+            League als voorbeeld te nemen.
+          </p>
+        </section>
+        <section>
+          <h4>Deadline</h4>
+          <p>14 april 2024</p>
+        </section>
+        <section>
+          <h4>Webadres</h4>
+          <a
+            class="url"
+            target="_blank"
+            href="https://apt-webapplicatie-7vgveczlya-ew.a.run.app/"
+            >https://apt-webapplicatie-7vgveczlya-ew.a.run.app/</a
+          >
+        </section>
+      </article>
+      <figure id="foto1">
+        <picture>
+          <source
+            media="(min-width:768px )"
+            srcset="../img/webapplicatie.jpg"
+          />
+          <source srcset="../img/bootstrapSite-sm.jpg" />
+          <img src="../img/bootstrapSite-sm.jpg" alt="Thema site mockup" />
+        </picture>
+      </figure>
+      <figure id="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/DiDCOQsQ_g4?si=wzcFeoJLq_ZP39Dp"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </figure>
+    </main>
+    <footer>
+      <p>© 2023, all rights reserved</p>
+    </footer>
+  </body>
+</html>
