@@ -5,15 +5,23 @@
     "titel"
     "tekst"
     "foto"
+    "prof"
+    "tekst2"
     "contact";
   gap: 50px;
 }
 #titeltje {
   grid-area: titel;
 }
+#prof {
+  grid-area: prof;
+}
 
 #tekst {
   grid-area: tekst;
+}
+#tekst2 {
+  grid-area: tekst2;
 }
 #profiel {
   grid-area: foto;
@@ -82,6 +90,8 @@ textarea {
     grid-template-areas:
       "titel ."
       "tekst foto"
+      "prof foto2"
+      "tekst2 foto2"
       "contact contact";
     gap: 60px;
   }
@@ -113,10 +123,13 @@ textarea {
     grid-template-areas:
       "titel foto"
       "tekst foto"
+      "prof foto2"
+      "tekst2 foto2"
       "contact contact";
     gap: 50px;
   }
-  #tekst {
+  #tekst,
+  #tekst2 {
     width: 80%;
   }
   form {
