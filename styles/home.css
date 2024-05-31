@@ -7,6 +7,7 @@
     "foto"
     "prof"
     "tekst2"
+    "foto2"
     "contact";
   gap: 50px;
 }
@@ -16,7 +17,9 @@
 #prof {
   grid-area: prof;
 }
-
+#profImage {
+  grid-area: foto2;
+}
 #tekst {
   grid-area: tekst;
 }
@@ -26,7 +29,8 @@
 #profiel {
   grid-area: foto;
 }
-#profiel img {
+#profiel img,
+#profImage img {
   width: calc(100vw - 100px);
 }
 #contact {
@@ -90,7 +94,7 @@ textarea {
     grid-template-areas:
       "titel ."
       "tekst foto"
-      "prof foto2"
+      "prof prof"
       "tekst2 foto2"
       "contact contact";
     gap: 60px;
@@ -109,7 +113,8 @@ textarea {
   #profiel {
     grid-area: foto;
   }
-  #profiel img {
+  #profiel img,
+  #profImage img {
     width: 100%;
   }
   #contact {
@@ -132,6 +137,7 @@ textarea {
   #tekst2 {
     width: 80%;
   }
+
   form {
     width: calc(100vw - 160px);
   }
