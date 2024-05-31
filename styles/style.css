@@ -31,6 +31,10 @@ figure {
 }
 figure img {
   border-radius: 80px;
+  transition-duration: 1s;
+}
+figure img:hover {
+  transform: rotate(2deg);
 }
 footer {
   width: 100%;

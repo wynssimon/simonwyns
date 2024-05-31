@@ -6,9 +6,6 @@
   border-radius: 15px;
   transition-duration: 1s;
 }
-#projecten article a:hover figure img {
-  transform: rotate(2deg);
-}
 #projecten article a:hover figure figcaption {
   color: white;
   transform: rotate(2deg);
