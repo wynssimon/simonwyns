@@ -56,7 +56,8 @@ input[type="submit"] {
   transition-duration: 0.5s;
 }
 input[type="submit"]:hover {
-  background: rgba(255, 255, 255, 0.259);
+  background: #ffd869;
+  color: #151515;
 }
 label {
   color: white;
