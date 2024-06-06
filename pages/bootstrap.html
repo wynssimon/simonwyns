@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <script defer src="/scripts/hamburger.js"></script>
+    <script defer src="/scripts/imageShow.js"></script>
   </head>
   <body>
     <header>
@@ -62,6 +63,11 @@
         </ul>
       </nav>
     </header>
+    <div id="kader" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="content" id="imgPlace" />
+      <div id="caption"></div>
+    </div>
     <main id="projectDetailsBlock">
       <h2 id="nummer">Project #2</h2>
       <h3 id="naam"><span>Themasite met Bootstrap</span></h3>
@@ -109,6 +115,8 @@
           />
           <source srcset="../img/projects/bootstrapSite-sm.jpg" />
           <img
+            id="portfolio1"
+            onclick="vergroot('portfolio1')"
             src="../img/projects/bootstrapSite-sm.jpg"
             alt="Thema site mockup"
           />
@@ -122,6 +130,8 @@
           />
           <source srcset="../img/projects/bootstrapSite2-sm.jpg" />
           <img
+            id="portfolio2"
+            onclick="vergroot('portfolio2')"
             src="../img/projects/bootstrapSite2-sm.jpg"
             alt="Thema site code"
           />

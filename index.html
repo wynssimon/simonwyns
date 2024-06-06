@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <script defer src="./scripts/hamburger.js"></script>
+    <script defer src="./scripts/imageShow.js"></script>
   </head>
   <body>
     <header>
@@ -65,6 +66,11 @@
         </ul>
       </nav>
     </header>
+    <div id="kader" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="content" id="imgPlace" />
+      <div id="caption"></div>
+    </div>
     <main id="homeBlock">
       <div id="titeltje" class="flex">
         <img src="./img/icons/wave.png" alt="hey!" />

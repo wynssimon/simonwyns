@@ -126,6 +126,9 @@
         ?></main>
 
     </main>
+    <footer>
+      <p>© 2023, all rights reserved</p>
+    </footer>
   </body>
 </html>
 
